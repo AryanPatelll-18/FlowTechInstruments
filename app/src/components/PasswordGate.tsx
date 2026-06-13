@@ -100,6 +100,7 @@ export default function PasswordGate({ children }: PasswordGateProps) {
   const [attempts, setAttempts] = useState(0);
   const [isLocked, setIsLocked] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const heroBgUrl = new URL(`${import.meta.env.BASE_URL}hero_bg.png`, window.location.href).toString();
 
   useEffect(() => {
     const auth = sessionStorage.getItem(STORAGE_KEY);
@@ -147,7 +148,7 @@ export default function PasswordGate({ children }: PasswordGateProps) {
         {/* Background layers */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: "url(/hero_bg.png)" }}
+          style={{ backgroundImage: `url(${heroBgUrl})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#111] via-transparent to-[#111]" />
         <FloatingParticles />
@@ -174,7 +175,7 @@ export default function PasswordGate({ children }: PasswordGateProps) {
                 {/* Logo + Name */}
                 <div className="flex items-center gap-3 sm:gap-4">
                   <img
-                    src="/flowtech_logo_white.png"
+                    src={`${import.meta.env.BASE_URL}flowtech_logo_white.png`}
                     alt="Flowtech Instruments"
                     className="h-16 sm:h-20 w-auto object-contain"
                     style={{ imageRendering: 'auto' }}

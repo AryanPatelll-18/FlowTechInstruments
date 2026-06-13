@@ -379,7 +379,7 @@ export default function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <img
-                src="/flowtech_logo_white.png"
+                src={`${import.meta.env.BASE_URL}flowtech_logo_white.png`}
                 alt="Flowtech Instruments"
                 className="h-12 sm:h-14 w-auto object-contain"
               />

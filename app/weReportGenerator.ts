@@ -94,7 +94,7 @@ export function generateWEReport(input: WEReportInput): string {
   }
 
   // Flowtech Logo absolute URL
-  const logoUrl = `${window.location.origin}/assets/flowtech_logo.png`;
+  const logoUrl = new URL(`${import.meta.env.BASE_URL}flowtech_logo.png`, window.location.href).toString();
 
   return `<!DOCTYPE html>
 <html lang="en">

@@ -148,7 +148,7 @@ export default function PdfReport({ state, validResults, rejectedResults }: PdfR
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <img src="/flowtech_logo.png" alt="Flowtech" style={{ height: "36px", width: "auto" }} />
+            <img src={`${import.meta.env.BASE_URL}flowtech_logo.png`} alt="Flowtech" style={{ height: "36px", width: "auto" }} />
             <div style={{ borderLeft: "2px solid " + C.red, paddingLeft: "10px" }}>
               <div style={{ color: C.white, fontSize: "14px", fontWeight: 800 }}>
                 Flow Meter Sizing Report

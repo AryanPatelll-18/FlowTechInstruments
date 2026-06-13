@@ -101,7 +101,7 @@ export default function PdfReportRotameter({ state }: PdfReportRotameterProps) {
         >
           <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
             <img
-              src="/flowtech_logo.png"
+              src={`${import.meta.env.BASE_URL}flowtech_logo.png`}
               alt="Flowtech"
               style={{ height: "38px", width: "auto", objectFit: "contain" }}
             />
@@ -540,7 +540,7 @@ export default function PdfReportRotameter({ state }: PdfReportRotameterProps) {
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <img src="/flowtech_logo.png" alt="Flowtech" style={{ height: "14px", width: "auto", opacity: 0.5 }} />
+            <img src={`${import.meta.env.BASE_URL}flowtech_logo.png`} alt="Flowtech" style={{ height: "14px", width: "auto", opacity: 0.5 }} />
             <span style={{ fontSize: "7px", color: C.grey500, fontWeight: 500 }}>
               Flowtech Instruments (I) Pvt. Ltd. · flowtech-instruments.com
             </span>

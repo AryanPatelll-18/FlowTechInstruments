@@ -3,7 +3,7 @@
 // Generate QAP and GAD+Datasheet HTML for print-to-PDF
 // ============================================================
 
-const FLOWTECH_LOGO = `/flowtech_logo_white.png`;
+const FLOWTECH_LOGO = new URL(`${import.meta.env.BASE_URL}flowtech_logo_white.png`, window.location.href).toString();
 
 function docHeader(title: string, soRef: string): string {
   return `
